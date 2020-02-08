@@ -326,3 +326,44 @@ footer {
     margin-bottom: 2rem;
   }
 }
+body {
+  margin: 3rem;
+}
+body .form h1 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  color: #23293B;
+}
+body .form form input {
+  margin-bottom: 3rem;
+  width: 60%;
+  border-radius: 3px;
+  height: 3rem;
+  background: lightgoldenrodyellow;
+}
+body .form form p {
+  font-size: 2rem;
+  color: #454A59;
+}
+body .form button {
+  width: 50%;
+  height: 4.5rem;
+  background: #23293B;
+  color: #F6F6F6;
+  font-size: 2rem;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+body .form button:hover {
+  background: #F6F6F6;
+  color: #23293B;
+}
+.thanks h1 {
+  font-size: 5rem;
+  padding-bottom: 2rem;
+  color: #23293B;
+}
+.thanks .confirmation {
+  font-size: 2rem;
+  color: #23293B;
+}
