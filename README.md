@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive layout adjusts to user's screen size to an extent. However, this is basically several different fixed webpages, and the size of the screen determines which fixed view the user sees. With a fully responsive website, there is a combination of fluid and adaptive design. This usually involves several break points for different screen sizes as well as percentage-based sizing so that the content will look best at many different screen sizes. Another big difference in the two is the time it takes the designer to create each type - adaptive usually takes the developer less time while fully responsive takes more time. In the end, the developer's extra time spent to create a fully responsive website is converted into a much better user experience for a large number of users.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first design means that the developer first creates a page that looks best on a mobile screen. After that, break points and responsive tools are used to make the page look better on larger and larger screens. Desktop first design goes in the opposite direction - the desktop page is designed first, and then breakpoints and design changes make the page adapt to smaller screen sizes.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+This is primarily an accessibility fix. Setting font size to 62.5% makes the default 10px, so when em and rem units are used later in the design they will scale up from there. For users that set their font size to be larger or smaller (for varying eyesights), having the font size set to 62.5% and using ems/rems will cause their text to adjust to their personalized settings. This differs from using pixels throughout the code - using pixels would keep the users font size adjustments from having any effect on a page's display - pixels belong in fixed websites, and we don't like fixed websites.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is an amazing way to make CSS easier in so many ways! First, the way elements are nested makes it so much easier to read the design files. Second, you can split up your CSS into multiple files so you don't have to scroll through hundreds of lines of code to find what you want to change. For example, you can have all of your navigation design inside one file, while all your image design is in another file, etc. The third big advantage of preprocessing is that the compiler automatically error checks your code each time you change. It will let you know if you leave out some important syntax! This saves a ton of time scrolling through code trying to find where you left out that semicolon. Highly recommend you learn how to use a preprocessor!!
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Easy! My favorite preprocessing concept is having multiple design files that get imported into the index.less file. It took some getting used to, but it clicked when I discovered how easy it was to pop over to the right design file and go straight to the line of code that I needed to change. I struggled the most with escaping. It wasn't even that the way it works confused me - I actually got that immediately. For some reason, the word 'escaping' itself confused me. Like, why is it called that? What does it mean? I looked for more information online about it and paid extra attention in class to make sure I was at a comfortable level of understanding.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
