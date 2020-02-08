@@ -1,1 +1,60 @@
 // Navigation code here
+body {
+    nav {
+        .flex(flex, space-between);
+        flex-wrap: wrap;
+        width: 100%;
+        padding: auto;
+        background-color: @wild-sand;
+        h1 {
+            font-size: 4rem;
+            width: 100%;
+            .flex(flex, center);
+            margin: 2rem;
+            color: @ebony-clay;
+        }
+        .nav {
+            .flex(flex, space-around);
+            width: 40%;
+            margin: auto;
+            a {
+                text-decoration: none;
+                .pfont(2rem, @river-bend);
+                margin: auto;
+                margin-bottom: 1rem;
+                padding: 5px;
+                border-radius: 5px;
+                &:hover {
+                    background: @river-bend;
+                    color: @wild-sand;
+                }
+            }
+        }
+        
+    }
+}
+
+/* Mobile design changes */
+@media @mobile {
+    body {
+        nav {
+            .nav {
+                width: 80%;
+                justify-content: space-around;
+            }
+        }
+
+    }
+}
+
+@media @tablet {
+    body {
+        nav {
+            .nav {
+                width: 80%;
+                justify-content: space-around;
+                margin: auto;
+            }
+        }
+    }
+}
